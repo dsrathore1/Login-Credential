@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.scontainer {
+    height: 100vh;
+}
+
+.sbackground {
+    background: linear-gradient(305deg, #ff8f14, #ffc84d);
+    height: 54.1vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sbox {
+    height: 80vh;
+    align-items: center;
+    padding-top: 2px;
+    margin-top: 20em;
+    box-shadow: 4px 6px 30px #b9b9b980;
+    background: white;
+    width: 27%;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sheading1 {
+    font-weight: 300;
+    margin-top: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.sinputContainer {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.semailInput {
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 13px;
+    color: black;
+    font-size: 18px;
+    transition: all 0.5s ease-in;
+    box-shadow: 1px 3px 12px 0 rgb(97 97 97 / 16%);
+    padding-left: 3.4rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.spwdInput {
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 13px;
+    color: black;
+    font-size: 18px;
+    transition: all 0.5s ease;
+    box-shadow: 1px 3px 12px 0 rgb(97 97 97 / 16%);
+    padding-left: 3.4rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.scpwdInput {
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 13px;
+    color: black;
+    font-size: 18px;
+    transition: all 0.5s ease;
+    box-shadow: 1px 3px 12px 0 rgb(97 97 97 / 16%);
+    padding-left: 3.4rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.semailInput:focus {
+    border: 2px solid #ffc84d;
+}
+
+.spwdInput:focus {
+    border: 2px solid #ffc84d;
+}
+
+.scpwdInput:focus {
+    border: 2px solid #ffc84d;
+}
+
+.semailInput:hover {
+    box-shadow: 1px 3px 12px 0 rgba(97, 97, 97, 0.336);
+
+}
+
+.spwdInput:hover {
+    box-shadow: 1px 3px 12px 0 rgba(97, 97, 97, 0.336);
+}
+
+.scpwdInput:hover {
+    box-shadow: 1px 3px 12px 0 rgba(97, 97, 97, 0.336);
+}
+
+.siconContainer {
+    position: absolute;
+    /*background: #eeeeee; */
+    border-right: 1.2px solid #c5c4c4;
+    height: 15%;
+    width: 15%;
+    text-align: center;
+    border-radius: 4px 0 0 34px;
+}
+
+.sfas {
+    color: #b8b8b8;
+    padding-top: 1rem;
+
+}
+
+.sfloatingEmail {
+    position: absolute;
+    right: 10.7rem;
+    top: 11px;
+    color: #ccc;
+    font-size: 16px;
+    transition: all 0.4s ease;
+    pointer-events: none;
+}
+
+
+.sfloatingEmail::after{
+    color: #fff;
+}
+
+.sfloatingPwd {
+    position: absolute;
+    right: 9rem;
+    top: 5.8rem;
+    color: #ccc;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.4s ease;
+}
+
+.sfloatingCPwd {
+    position: absolute;
+    right: 4.7rem;
+    top: 10.8rem;
+    color: #ccc;
+    font-size: 16px;
+    transition: all 0.4s ease;
+    width: 50%;
+    pointer-events: none;
+
+}
+
+input:focus~.sfloatingEmail {
+    color: #ffc84d;
+    font-size: 12px;
+    left: 4.2rem;
+    top: 1.2px;
+    pointer-events: none;
+}
+
+input:focus~.sfloatingPwd {
+    color: #ffc84d;
+    font-size: 12px;
+    top: 5.2rem;
+    left: 4.2rem;
+    pointer-events: none;
+}
+
+input:focus~.sfloatingCPwd {
+    color: #ffc84d;
+    font-size: 12px;
+    left: 4.2rem;
+    top: 10.3rem;
+    pointer-events: none;
+
+}
+
+.semailInput:valid + .sfloatingEmail{
+    visibility: hidden;
+    z-index: -1;
+    transition: all 0.3s ease-out;
+}
+
+.spwdInput:valid + .sfloatingPwd{
+    visibility: hidden;
+    z-index: -1;
+    transition: all 0.3s ease-out;
+}
+
+.scpwdInput:valid + .sfloatingCPwd{
+    visibility: hidden;
+    z-index: -1;
+    transition: all 0.3s ease-out;
+}
+
+.seyeSec{
+    color: black ;
+    position: absolute;
+    top: 6rem;
+    right: 1rem;
+}
+
+.sfa-eye-slash{
+    color: #ffc84d;
+    position: absolute; 
+    right: 1rem;
+}
+
+.sbtn{
+    background: linear-gradient(305deg, #ff8f14, #ffc84d);
+    color: #fff;
+    padding: 0.8rem 0;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    box-shadow: 1px 3px 12px 0 rgb(97 97 97 / 16%);
+    transition: all 0.3s ease-in-out;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.sbtn:active{
+    transform: translateY(3px);
+}
+
+.sroute{
+    color: #d1d1d1;
+    margin-top: 6rem;
+    cursor: default;
+}
+
+.sroute a{
+    margin-left: 2px;
+    text-decoration: none;
+    color: #5151ff  ;
+}
+
+.sroute a:hover{
+    color: #ffc84d;
+}
+
+.siconContainer > .MuiSvgIcon-root{
+    font-size: 2.2rem;
+    padding-top: 8px;
+}
