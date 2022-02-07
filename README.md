@@ -1,10 +1,12 @@
 <h1 align="center" > -: Credentials :- <h1/>
   
-
-* This is simple Login and Signup authentication app using MERN-Stack. And although Google and Github Auth button integration, whenever user need to know its forget password the reset link will be send to on his/her registered email address which is already stored in database.
+<br/>
+  
+#### This is simple Login and Signup authentication app using MERN-Stack. And also I integrate Google and Github oauth buttons for easy to login & sign-up, whenever user need to know its forget password the reset link will be send to on his/her registered email address which is already stored in database.
 
 <h1 align="center" >UI Demos<h1/>
   
+<br/>
 <br/>
   
 ### SignUp Page :-
